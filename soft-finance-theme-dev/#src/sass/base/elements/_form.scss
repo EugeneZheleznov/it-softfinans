@@ -1,0 +1,121 @@
+.form__white {
+    width: 350px;
+    height: fit-content;
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 400px) {
+        padding: 15px;
+    }
+
+    .title {
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: bold;
+        color: darkred;
+    }
+    
+    #title__modal { 
+        font-size: 22px;
+        font-weight: bold;
+        color: $darkred;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 50px;
+
+        @media (max-width: 400px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    input {
+        border: 1px solid grey;
+        border-radius: 5px;
+
+        &[type="tel"] {
+            height: 50px;
+            width: 100%;
+            padding-left: 5px;
+            margin-bottom: 25px;
+        }
+        &[type="text"] {
+            height: 50px;
+            width: 100%;
+            padding-left: 5px;
+            margin-bottom: 25px;
+        }
+
+        &[type="checkbox"] {
+            height: 25px;
+            width: 25px;
+            float: left;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .hidden__input {
+        display: none;
+    }
+
+    .checkbox {
+        display: flex;
+        margin-bottom: 25px;
+          
+        span { 
+            font-size: 13px;
+        }
+
+        .wpcf7-list-item { 
+            margin: 0;
+        }
+
+        span.wpcf7-checkbox span {
+            display: flex;
+            align-items: start;
+
+            input {
+                display: block;
+                width: 21px;
+                line-height: 1;
+                margin-right: 11px;
+                min-width: 20px;
+            }
+        }
+    }
+
+    .btn__form {
+        width: 100%;
+        background: $darkred;
+        border: none;
+        height: 50px;
+        color: white;
+        line-height: 1;
+        cursor: pointer;
+        transition: .1s;
+        padding: 0;
+        
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    span.wpcf7-spinner {
+        display: none;
+    }
+
+    .wpcf7-response-output {
+        font-size: 13px;
+    }
+
+    &.invalid {
+
+        .wpcf7-response-output {
+            border-color: red !important; 
+        }
+    }
+}

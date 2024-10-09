@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+h1, h2, h3, h4 { 
+    font-family: 'Exo2', sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+h1 { 
+    font-size: 28px;
+}
+
+h2 { 
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+h3 {  
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h4 {  
+    font-size: 22px;
+    margin-bottom: 20px;
+}

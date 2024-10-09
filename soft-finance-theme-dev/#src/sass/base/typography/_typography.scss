@@ -1,0 +1,20 @@
+@include font("Exo2", "Exo2-Regular", "400", "normal");
+@include font("Exo2", "Exo2-Bold", "bold", "normal"); 
+ 
+
+@import "headings"; 
+
+a, p, span, div { 
+    font-family: 'Exo2', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 18px;
+} 
+
+li { 
+    font-family: 'Exo2', sans-serif;
+    line-height: 1.5;
+    font-weight: 400; 
+    margin-bottom: 10px;
+} 
+ 

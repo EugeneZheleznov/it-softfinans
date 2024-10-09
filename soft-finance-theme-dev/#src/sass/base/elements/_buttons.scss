@@ -1,0 +1,18 @@
+header .header__wrap .header__btn .btn__red,  .btn__red {
+    width: 100%;
+    background: $darkred;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: .1s; 
+    
+    &:hover {
+        opacity: .8;
+    }
+}

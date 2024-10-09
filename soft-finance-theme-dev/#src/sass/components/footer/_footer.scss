@@ -1,0 +1,197 @@
+footer { 
+	max-width: 1280px;
+    margin: 0 auto;
+    background-image: url('img/klava.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .footer__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        background: #000000eb;
+
+        .footer__nav {
+            width: 100%; 
+            display: flex;
+            justify-content: center; 
+            flex-wrap: wrap;
+
+            ul { 
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                max-width: 800px;
+                width: 100%;
+                margin-bottom: 25px;
+                border-bottom: 2px solid white;
+                padding: 15px;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                @media (max-width: 450px) {
+                    flex-direction: column;
+                }
+            
+                li {
+                    a {
+                        color: white;
+                        font-weight: bold;
+                        text-decoration: none;
+                        transition: .1s;
+
+                        &:hover {
+                            color: $darkred;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__column {
+            width: calc(100% / 3);
+            min-width: 300px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                img {
+                    width: 100px;
+                    height: 100px;
+                } 
+            }
+
+            &:nth-child(3) {
+                align-items: center;
+                
+                @media (max-width: 900px) {
+                    align-items: start;
+                }
+
+                a {
+                    font-size: 25px;
+                    font-weight: bold;
+                    transition: .1s;
+
+                    &:hover {
+                        color: $darkred;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+
+                a {
+                    transition: .1s;
+
+                    &:hover {
+                        color: $darkred;
+                    }
+                }
+
+                .text {
+                    margin-left: auto;
+
+                    @media (max-width: 900px) {
+                        margin: 0;
+                    }
+                }
+            }
+
+            p {
+                color: white;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .footer__bottom {
+            width: 100%;
+            padding: 15px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: .1s;
+
+                &:hover {
+                    color: $darkred;
+                }
+            }
+        }
+    }
+}
+
+
+.popup {
+    display: none; 
+    justify-content: center;
+    position: fixed;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    &.active {
+        display: flex;
+    }
+ 
+    .form__white {
+        padding: 20px;
+        position: relative;
+
+        @media (max-width: 375px) {
+            width: 300px;
+        }
+
+        span.close__popup {
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-content: center;
+            line-height: 1;
+            background: $darkred;
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            cursor: pointer;
+            user-select: none;
+    
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000009e;
+    z-index: 999;
+
+    &.active {
+        display: block;
+    }
+}

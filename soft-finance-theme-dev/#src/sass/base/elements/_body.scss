@@ -1,0 +1,38 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth; 
+}
+body {
+	background: $color__background-body; 
+	overflow-x: hidden; 
+    position: relative; 
+}
+div#page {
+    overflow: hidden;
+    max-width: 1280px;
+    margin: auto;
+    width: 100%;
+    position: relative; 
+}
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+} 
+
+.lock {
+    overflow: hidden;
+}
+section {
+    padding: 15px;
+}
